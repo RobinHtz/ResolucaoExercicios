@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //8 - Faça um algoritmo que leia três valores inteiros diferentes e imprima na tela os valores em ordem decrescente.
 
-public class resolucao1 {
+public class Resolucao1 {
     public static void main(String[] args) {
         Scanner meuScanner = new Scanner(System.in);
         int a, b, c;

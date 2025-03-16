@@ -7,7 +7,7 @@ caso contrário devera multiplicar A por B. Ao final de qualquer um dos cálculo
 imprimir seu valor na tela.
 */
 
-public class resolucao1 {
+public class Resolucao {
     public static void main(String[] args) {
         Scanner meuScanner = new Scanner(System.in);
         int A,B,C;

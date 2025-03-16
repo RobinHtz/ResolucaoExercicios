@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //7 - Faça um algoritmo que leia dois valores booleanos (lógicos) e determine se ambos são VERDADEIRO ou FALSO.
 
-public class resolucao1 {
+public class Resolucao {
     public static void main(String[] args) {
         Scanner meuScanner = new Scanner(System.in);
         boolean bool1,bool2;
