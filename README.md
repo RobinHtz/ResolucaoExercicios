@@ -1,6 +1,6 @@
-Resolução de exercícios de lógica de programa em Java,
+# Resolução de exercícios de lógica de programa em Java,
 
-Exercícios desse [link!](https://www.dio.me/articles/lista-de-exercicios-para-treinar-logica-de-programacao)
+## Exercícios desse [link!](https://www.dio.me/articles/lista-de-exercicios-para-treinar-logica-de-programacao)
 
 Resolução [exercício 1](https://github.com/RobinHtz/ResolucaoExercicios/blob/main/src/exercicio1/Resolucao.java)
 
