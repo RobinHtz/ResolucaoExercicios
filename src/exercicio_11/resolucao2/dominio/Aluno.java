@@ -1,4 +1,4 @@
-package exercicio11.resolucao2.dominio;
+package exercicio_11.resolucao2.dominio;
 
 public class Aluno {
     private String nome;

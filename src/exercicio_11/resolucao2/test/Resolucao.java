@@ -1,7 +1,7 @@
-package exercicio11.resolucao2.test;
+package exercicio_11.resolucao2.test;
 
 import java.util.Scanner;
-import exercicio11.resolucao2.dominio.Aluno;
+import exercicio_11.resolucao2.dominio.Aluno;
 
 /*11 - Faça um algoritmo que leia quatro notas obtidas por um aluno, calcule a média das nota obtidas, imprima na tela o nome do aluno e
  se o aluno foi aprovado ou reprovado. Para o aluno ser considerado aprovado sua média final deve ser maior ou igual a 7. */
