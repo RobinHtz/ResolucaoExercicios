@@ -23,6 +23,6 @@ public class Resolucao {
             C=A*B;
         }
 
-        System.out.print("\nO resultado é "+C);
+        System.out.println("\nO resultado é "+C);
     }
 }

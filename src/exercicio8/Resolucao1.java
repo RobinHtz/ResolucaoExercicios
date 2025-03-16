@@ -18,21 +18,21 @@ public class Resolucao1 {
 
         if (a < b && a < c) {
             if (b < c) {
-                System.out.print("Ordem decrescente: " + a + "," + b + "," + c + ".");
+                System.out.println("\nOrdem decrescente: " + a + ", " + b + ", " + c + ".");
             } else {
-                System.out.print("Ordem decrescente: " + a + "," + c + "," + b + ".");
+                System.out.println("\nOrdem decrescente: " + a + ", " + c + ", " + b + ".");
             }
         } else if (b < a && b < c) {
             if (a < c) {
-                System.out.print("Ordem decrescente: " + b + "," + a + "," + c + ".");
+                System.out.println("\nOrdem decrescente: " + b + ", " + a + ", " + c + ".");
             } else {
-                System.out.print("Ordem decrescente: " + b + "," + c + "," + a + ".");
+                System.out.println("\nOrdem decrescente: " + b + ", " + c + ", " + a + ".");
             }
         } else if (c < a && c < b) {
             if (b < a) {
-                System.out.print("Ordem decrescente: " + c + "," + b + "," + a + ".");
+                System.out.println("\nOrdem decrescente: " + c + ", " + b + ", " + a + ".");
             } else {
-                System.out.print("Ordem decrescente: " + c + "," + a + "," + b + ".");
+                System.out.println("\nOrdem decrescente: " + c + ", " + a + ", " + b + ".");
             }
         } else {
             System.out.println("\nPor favor, não digite valores iguais.");

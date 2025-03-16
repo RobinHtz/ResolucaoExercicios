@@ -19,9 +19,9 @@ public class Resolucao {
         }
 
         if(num>=0) {
-            System.out.print("positivo.");
+            System.out.println("positivo.");
         } else {
-            System.out.print("negativo.");
+            System.out.println("negativo.");
         }
     }
 }

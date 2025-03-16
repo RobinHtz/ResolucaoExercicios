@@ -50,7 +50,9 @@ public class Resolucao2 {
             System.out.println("\nPor favor, não digite valores iguais.");
         }
 
-        System.out.println("A ordem decrescente é: "+menor+","+meio+","+maior+".");
+        if(a!=b && b!=c && a!=c) {
+            System.out.println("\nA ordem decrescente é: " + menor + "," + meio + "," + maior + ".");
+        }
         //Essa alternativa de resolução diminui a quantidade de impressões no código, mas não sei se o código fica visivelmente melhor.
     }
 }

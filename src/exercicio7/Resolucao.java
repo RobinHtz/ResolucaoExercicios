@@ -16,12 +16,12 @@ public class Resolucao {
 
         if(bool1 == bool2) {
             if(bool1) {
-                System.out.print("\nOs dois valores booleanos são verdadeiros.");
+                System.out.println("\nOs dois valores booleanos são verdadeiros.");
             } else {
-                System.out.print("\nOs dois valores booleanos são falsos.");
+                System.out.println("\nOs dois valores booleanos são falsos.");
             }
         } else {
-            System.out.print("\nOs valores booleanos são diferentes.");
+            System.out.println("\nOs valores booleanos são diferentes.");
         }
     }
 }

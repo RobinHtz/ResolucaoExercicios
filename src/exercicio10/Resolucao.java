@@ -17,6 +17,6 @@ public class Resolucao {
         nota3 = meuScanner.nextDouble();
 
         media = (nota1+nota2+nota3)/3;
-        System.out.printf("A média das três notas é %.1f",media);
+        System.out.printf("\nA média das três notas é %.1f\n",media);
     }
 }

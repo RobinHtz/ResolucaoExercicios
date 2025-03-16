@@ -16,6 +16,6 @@ public class Resolucao {
         salarioUsuario = meuScanner.nextDouble();
 
         quantidadeSalariosMin = salarioUsuario/salarioMinimo;
-        System.out.printf("\nA quantidade de salários mínimos que o usuário recebe é %.1f.",quantidadeSalariosMin);
+        System.out.printf("\nO usuário recebe cerca de %.1f salários mínimos.\n",quantidadeSalariosMin);
     }
 }

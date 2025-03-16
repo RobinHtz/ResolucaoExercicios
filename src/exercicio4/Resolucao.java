@@ -13,7 +13,7 @@ public class Resolucao {
         num = meuScanner.nextInt();
         num = num-1;
 
-        System.out.print("Antecessor do número: "+ num++);
-        System.out.print("\nSucessor do número: "+ ++num);
+        System.out.print("\nAntecessor do número: "+ num++);
+        System.out.println("\nSucessor do número: "+ ++num);
     }
 }

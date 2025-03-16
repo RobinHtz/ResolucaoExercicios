@@ -29,17 +29,17 @@ public class Resolucao {
         valorIMC = peso / (altura*altura);
 
         if(valorIMC < 18.5) {
-            System.out.print("Abaixo do peso.");
+            System.out.println("\nAbaixo do peso.");
         } else if(valorIMC >= 18.5 && valorIMC <25) {
-            System.out.print("Peso ideal.");
+            System.out.println("\nPeso ideal.");
         } else if(valorIMC >= 25 && valorIMC <30) {
-            System.out.print("Levemente acima do peso.");
+            System.out.println("\nLevemente acima do peso.");
         } else if(valorIMC >= 30 && valorIMC <35) {
-            System.out.print("Obesidade grau I.");
+            System.out.println("\nObesidade grau I.");
         } else if(valorIMC >= 35 && valorIMC <40) {
-            System.out.print("Obesidade grau II (severa).");
+            System.out.println("\nObesidade grau II (severa).");
         } else if(valorIMC>=40){
-            System.out.print("Obesidade grau III (mórbida).");
+            System.out.println("\nObesidade grau III (mórbida).");
         }
     }
 }
