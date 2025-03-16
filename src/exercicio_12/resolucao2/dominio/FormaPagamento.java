@@ -30,5 +30,4 @@ public enum FormaPagamento {
     };
 
     public abstract double calcularDesconto(double valor);
-
 }

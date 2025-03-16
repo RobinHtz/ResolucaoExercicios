@@ -7,11 +7,6 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(double valor, FormaPagamento formaPagamento) {
-        this.valor = valor;
-        this.formaPagamento = formaPagamento;
-    }
-
     public double getValor() {
         return valor;
     }

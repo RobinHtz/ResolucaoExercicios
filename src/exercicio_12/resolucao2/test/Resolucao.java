@@ -1,8 +1,8 @@
 package exercicio_12.resolucao2.test;
 
-import exercicio_12.resolucao2.dominio.FormaPagamento;
 import exercicio_12.resolucao2.dominio.Produto;
-
+import exercicio_12.resolucao2.dominio.FormaPagamento;
+import exercicio_12.resolucao2.servico.CalcularDesconto;
 import java.util.Scanner;
 
 /* 12 - Faça um algoritmo que leia o valor de um produto e determine o valor que deve ser pago, conforme a escolha da forma de pagamento
@@ -35,39 +35,19 @@ public class Resolucao {
         switch (num) {
             case 1:
                 produto.setFormaPagamento(FormaPagamento.Dinheiro_Pix);
-//                System.out.println("\n---------------------------------");
-//                System.out.println("Valor original: R$"+produto.getValor());
-//                System.out.println("Forma de pagamento: À vista em dinheiro ou pix.");
-//                System.out.println("Recebe 15% de desconto!");
-//                System.out.println("Novo valor: R$"+FormaPagamento.Dinheiro_Pix.calcularDesconto(produto.getValor()));
-//                System.out.println("\n---------------------------------");
+                CalcularDesconto.calcularDesconto(produto);
                 break;
             case 2:
                 produto.setFormaPagamento(FormaPagamento.Credito_1x);
-//                System.out.println("\n---------------------------------");
-//                System.out.println("Valor original: R$"+produto.getValor());
-//                System.out.println("Forma de pagamento: À vista no cartão de crédito");
-//                System.out.println("Recebe 10% de desconto!");
-//                System.out.println("Novo valor: R$"+FormaPagamento.Credito_1x.calcularDesconto(produto.getValor()));
-//                System.out.println("\n---------------------------------");
+                CalcularDesconto.calcularDesconto(produto);
                 break;
             case 3:
                 produto.setFormaPagamento(FormaPagamento.Credito_2x);
-//                System.out.println("\n---------------------------------");
-//                System.out.println("Valor original: R$"+produto.getValor());
-//                System.out.println("Forma de pagamento: Parcelado no cartão em duas vezes");
-//                System.out.println("Preço normal do produto sem juros.");
-//                System.out.println("Novo valor: R$"+FormaPagamento.Credito_2x.calcularDesconto(produto.getValor()));
-//                System.out.println("\n---------------------------------");
+                CalcularDesconto.calcularDesconto(produto);
                 break;
             case 4:
                 produto.setFormaPagamento(FormaPagamento.Credito_3x);
-//                System.out.println("\n---------------------------------");
-//                System.out.println("Valor original: R$"+produto.getValor());
-//                System.out.println("Forma de pagamento: Parcelado no cartão em três vezes ou mais");
-//                System.out.println("Preço normal do produto mais juros de 10%.");
-//                System.out.println("Novo valor: R$"+FormaPagamento.Credito_3x.calcularDesconto(produto.getValor()));
-//                System.out.println("\n---------------------------------");
+                CalcularDesconto.calcularDesconto(produto);
                 break;
             default:
                 System.out.println("Número inválido, tente novamente.");
