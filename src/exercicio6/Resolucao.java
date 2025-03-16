@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //6 - Faça um algoritmo que leia um valor qualquer e imprima na tela com um reajuste de 5%.
 
-public class resolucao1 {
+public class Resolucao {
     public static void main(String[] args) {
         Scanner meuScanner = new Scanner(System.in);
         double valor;
