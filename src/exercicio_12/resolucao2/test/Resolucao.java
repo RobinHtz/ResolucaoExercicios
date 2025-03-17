@@ -50,7 +50,7 @@ public class Resolucao {
                 CalcularDesconto.calcularDesconto(produto);
                 break;
             default:
-                System.out.println("Número inválido, tente novamente.");
+                System.out.println("\nNúmero inválido, tente novamente.");
         }
     }
 }
