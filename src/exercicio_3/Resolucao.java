@@ -9,20 +9,25 @@ imprimir seu valor na tela.
 
 public class Resolucao {
     public static void main(String[] args) {
+        lerValoresEComparar();
+    }
+
+    public static void lerValoresEComparar() {
         Scanner meuScanner = new Scanner(System.in);
-        int A,B,C;
 
         System.out.print("Digite o primeiro número inteiro: ");
-        A = meuScanner.nextInt();
+        int A = meuScanner.nextInt();
         System.out.print("Digite o segundo número inteiro: ");
-        B = meuScanner.nextInt();
+        int B = meuScanner.nextInt();
 
+        comparador(A,B);
+    }
+
+    public static void comparador(int A, int B) {
         if(A==B) {
-            C=A+B;
+            System.out.println("\nO resultado é "+(A+B));
         } else {
-            C=A*B;
+            System.out.println("\nO resultado é "+(A*B));
         }
-
-        System.out.println("\nO resultado é "+C);
     }
 }
