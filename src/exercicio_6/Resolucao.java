@@ -6,13 +6,16 @@ import java.util.Scanner;
 
 public class Resolucao {
     public static void main(String[] args) {
+        lerValorEReajustar();
+    }
+
+    public static void lerValorEReajustar() {
         Scanner meuScanner = new Scanner(System.in);
-        double valor;
 
         System.out.print("Digite um valor qualquer: ");
-        valor = meuScanner.nextDouble();
+        double valor = meuScanner.nextDouble();
 
         valor += (valor*5)/100;
-        System.out.println("Valor com novo reajuste: "+valor);
+        System.out.println("Valor com reajuste: "+valor);
     }
 }

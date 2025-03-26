@@ -7,15 +7,18 @@ usuário ganha e imprima na tela o resultado. (Base para o Salário mínimo R$ 1
 
 public class Resolucao {
     public static void main(String[] args) {
+        lerSalariosECalcular();
+    }
+
+    public static void lerSalariosECalcular() {
         Scanner meuScanner = new Scanner(System.in);
-        double salarioMinimo,salarioUsuario,quantidadeSalariosMin;
 
         System.out.print("Digite o valor de um salário mínimo: ");
-        salarioMinimo = meuScanner.nextDouble();
-        System.out.print("Digite o valor de seu salário: ");
-        salarioUsuario = meuScanner.nextDouble();
+        double salarioMinimo = meuScanner.nextDouble();
 
-        quantidadeSalariosMin = salarioUsuario/salarioMinimo;
-        System.out.printf("\nO usuário recebe cerca de %.1f salários mínimos.\n",quantidadeSalariosMin);
+        System.out.print("Digite o valor de seu salário: ");
+        double salarioUsuario = meuScanner.nextDouble();
+
+        System.out.printf("\nO usuário recebe cerca de %.1f salários mínimos.\n",salarioUsuario/salarioMinimo);
     }
 }

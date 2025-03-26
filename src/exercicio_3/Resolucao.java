@@ -20,10 +20,6 @@ public class Resolucao {
         System.out.print("Digite o segundo número inteiro: ");
         int B = meuScanner.nextInt();
 
-        comparador(A,B);
-    }
-
-    public static void comparador(int A, int B) {
         if(A==B) {
             System.out.println("\nO resultado é "+(A+B));
         } else {
