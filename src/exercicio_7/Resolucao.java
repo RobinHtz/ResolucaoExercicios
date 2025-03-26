@@ -6,13 +6,16 @@ import java.util.Scanner;
 
 public class Resolucao {
     public static void main(String[] args) {
+        lerValoresEComparar();
+    }
+
+    public static void lerValoresEComparar() {
         Scanner meuScanner = new Scanner(System.in);
-        boolean bool1,bool2;
 
         System.out.print("Digite true ou false para o primeiro valor booleano: ");
-        bool1 = meuScanner.nextBoolean();
+        boolean bool1 = meuScanner.nextBoolean();
         System.out.print("Digite true ou false para o segundo valor booleano: ");
-        bool2 = meuScanner.nextBoolean();
+        boolean bool2 = meuScanner.nextBoolean();
 
         if(bool1 == bool2) {
             if(bool1) {
