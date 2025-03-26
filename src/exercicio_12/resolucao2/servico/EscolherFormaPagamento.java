@@ -38,6 +38,7 @@ public class EscolherFormaPagamento {
                 break;
             default:
                 System.out.println("\nNúmero inválido, tente novamente.");
+                escolherFormaPagamento(produto);
         }
     }
 }
