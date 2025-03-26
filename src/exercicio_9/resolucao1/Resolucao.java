@@ -1,4 +1,4 @@
-package exercicio_9;
+package exercicio_9.resolucao1;
 
 import java.util.Scanner;
 
@@ -40,6 +40,8 @@ public class Resolucao {
             System.out.println("\nObesidade grau II (severa).");
         } else if(valorIMC>=40){
             System.out.println("\nObesidade grau III (mórbida).");
+        } else {
+            System.out.println("Medidas inválidas, tente novamente.");
         }
     }
 }

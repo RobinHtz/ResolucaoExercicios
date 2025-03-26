@@ -12,9 +12,9 @@ public class Resolucao {
         Scanner meuScanner = new Scanner(System.in);
         int A,B,C;
 
-        System.out.print("Digite o primeiro número: ");
+        System.out.print("Digite o primeiro número inteiro: ");
         A = meuScanner.nextInt();
-        System.out.print("Digite o segundo número: ");
+        System.out.print("Digite o segundo número inteiro: ");
         B = meuScanner.nextInt();
 
         if(A==B) {

@@ -13,6 +13,6 @@ public class Resolucao {
         valor = meuScanner.nextDouble();
 
         valor += (valor*5)/100;
-        System.out.println("Valor com novo reajuste "+valor);
+        System.out.println("Valor com novo reajuste: "+valor);
     }
 }

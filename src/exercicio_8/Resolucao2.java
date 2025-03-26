@@ -53,7 +53,7 @@ public class Resolucao2 {
         if(a!=b && b!=c && a!=c) {
             System.out.println("\nA ordem decrescente é: " + menor + "," + meio + "," + maior + ".");
         }
-        //Essa alternativa de resolução diminui a quantidade de impressões no código, mas não sei se o código fica visivelmente melhor.
+        //Essa alternativa de resolução diminui a quantidade de impressões no código, prefiro a resolução1.
     }
 }
 

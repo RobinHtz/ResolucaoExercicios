@@ -9,7 +9,7 @@ public class Resolucao {
         Scanner meuScanner = new Scanner(System.in);
         int num;
 
-        System.out.print("Digite um número: ");
+        System.out.print("Digite um número inteiro: ");
         num = meuScanner.nextInt();
         num = num-1;
 

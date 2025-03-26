@@ -18,8 +18,10 @@ public class Resolucao {
             System.out.print("\nO número "+num+" é impar e ");
         }
 
-        if(num>=0) {
+        if(num>0) {
             System.out.println("positivo.");
+        } else if(num == 0){
+            System.out.println("neutro.");
         } else {
             System.out.println("negativo.");
         }
