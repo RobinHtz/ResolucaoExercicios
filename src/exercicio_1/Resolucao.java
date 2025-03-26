@@ -6,26 +6,38 @@ import java.util.Scanner;
 
 public class Resolucao {
     public static void main(String[] args) {
-        Scanner meuScanner = new Scanner(System.in);
-        double a,b,c,soma;
+        double [] numeros = new double[3];
+        double soma;
 
-        System.out.println("-> Comparador de uma Soma com um Número <-");
-        System.out.println("Os dois primeiro números digitados serão somados e comparados com o terceiro número.\n");
+        lerValores(numeros);
+        soma = somarDoisNumeros(numeros[0],numeros[1]);
+        compararSomaComC(soma, numeros[2]);
+    }
+
+    public static void lerValores(double [] num) {
+        Scanner meuScanner = new Scanner(System.in);
 
         System.out.print("Digite o primeiro valor: ");
-        a = meuScanner.nextDouble();
+        num[0] = meuScanner.nextDouble();
         System.out.print("Digite o segundo valor: ");
-        b = meuScanner.nextDouble();
+        num[1] = meuScanner.nextDouble();
         System.out.print("Digite o último valor: ");
-        c = meuScanner.nextDouble();
+        num[2] = meuScanner.nextDouble();
+    }
 
-        soma = a+b;
+    public static double somarDoisNumeros(double a, double b) {
+        double soma = a+b;
         System.out.printf("\nA soma entre os valores %.0f e %.0f resulta em %.0f.\n\n",a,b,soma);
+        return soma;
+    }
 
-        if(soma >= c) {
-            System.out.print("A soma não é menor que C.");
+    public static void compararSomaComC(double soma, double c) {
+        if(soma > c) {
+            System.out.println("A soma não é menor que C.");
+        } else if(soma < c) {
+            System.out.println("A soma é menor que C.");
         } else {
-            System.out.print("A soma é menor que C!");
+            System.out.println("A soma é igual a C.");
         }
     }
 }

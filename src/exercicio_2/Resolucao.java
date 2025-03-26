@@ -6,18 +6,26 @@ import java.util.Scanner;
 
 public class Resolucao {
     public static void main(String[] args) {
+        double num = lerValor();
+        parOuImpar(num);
+        positivoOuNegativo(num);
+    }
+
+    public static double lerValor() {
         Scanner meuScanner = new Scanner(System.in);
-        double num;
-
         System.out.print("Digite um número: ");
-        num = meuScanner.nextDouble();
+        return meuScanner.nextDouble();
+    }
 
+    public static void parOuImpar(double num) {
         if(num%2==0) {
             System.out.print("\nO número "+num+" é par e ");
         } else {
             System.out.print("\nO número "+num+" é impar e ");
         }
+    }
 
+    public static void positivoOuNegativo(double num) {
         if(num>0) {
             System.out.println("positivo.");
         } else if(num == 0){
