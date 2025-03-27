@@ -6,20 +6,27 @@ import java.util.Scanner;
 
 public class Resolucao {
     public static void main(String[] args) {
+        lerValores();
+    }
+
+    public static void lerValores() {
         Scanner meuScanner = new Scanner(System.in);
-        String nome;
-        int idade;
 
         System.out.print("Digite seu nome: ");
-        nome = meuScanner.nextLine();
+        String nome = meuScanner.nextLine();
+
         System.out.print("Digite sua idade: ");
-        idade = meuScanner.nextInt();
-        if(idade<=0) {
-            System.out.print("Idade inválida, digite novamente sua idade: ");
+        int idade = meuScanner.nextInt();
+        if(idade<0) {
+            System.out.print("Idade inválida, digite uma idade válida: ");
             idade = meuScanner.nextInt();
         }
 
-        System.out.print(nome+" é ");
+        verificarIdade(nome,idade);
+    }
+
+    public static void verificarIdade(String nome, int idade) {
+        System.out.print("\n"+nome+" é ");
         if(idade>=18) {
             System.out.println("maior de idade.");
         } else {
