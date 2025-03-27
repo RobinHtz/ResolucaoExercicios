@@ -45,3 +45,33 @@ Exercício 9 - Calcula o IMC de uma pessoa.
 Exercício 10 - Imprime a média aritmética de três notas.
 
 [Resolução.](https://github.com/RobinHtz/ResolucaoExercicios/blob/main/src/exercicio_10/Resolucao.java)
+
+Exercício 11 - Verifica se um aluno passou de ano baseado em quatro notas.
+
+[Resolução 1.](https://github.com/RobinHtz/ResolucaoExercicios/blob/main/src/exercicio_11/resolucao1/Resolucao.java)
+
+[Resolução 2.](https://github.com/RobinHtz/ResolucaoExercicios/tree/main/src/exercicio_11/resolucao2)
+
+Exercício 12 - Lê o valor de um produto e baseado na forma de pagamento oferece um desconto.
+
+[Resolução 1.](https://github.com/RobinHtz/ResolucaoExercicios/blob/main/src/exercicio_12/resolucao1/Resolucao.java)
+
+[Resolução 2.](https://github.com/RobinHtz/ResolucaoExercicios/tree/main/src/exercicio_12/resolucao2)
+
+Exercício 13 - Verifica se uma pessoa é maior de idade.
+
+[Resolução 1.](https://github.com/RobinHtz/ResolucaoExercicios/blob/main/src/exercicio_13/resolucao1/Resolucao.java)
+
+[Resolução 2.](https://github.com/RobinHtz/ResolucaoExercicios/tree/main/src/exercicio_13/resolucao2)
+
+Exercício 14 - Troca os valores entre duas variáveis.
+
+[Resolução.](https://github.com/RobinHtz/ResolucaoExercicios/blob/main/src/exercicio_14/Resolucao.java)
+
+Exercício 15 - 
+
+.
+
+Exercício 16 - Verifica o tipo de um triângulo.
+
+[Resolução.](https://github.com/RobinHtz/ResolucaoExercicios/blob/main/src/exercicio_16/Resolucao.java)
