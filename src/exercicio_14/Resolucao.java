@@ -6,18 +6,30 @@ import java.util.Scanner;
 
 public class Resolucao {
     public static void main(String[] args) {
+        double A = lerPrimeiroValor();
+        double B = lerSegundoValor();
+
+        trocarValores(A,B);
+    }
+
+    public static double lerPrimeiroValor() {
         Scanner meuScanner = new Scanner(System.in);
-        int A,B,C;
-
         System.out.print("Digite o primeiro valor: ");
-        A = meuScanner.nextInt();
-        System.out.print("Digite o segundo valor: ");
-        B = meuScanner.nextInt();
+        return meuScanner.nextDouble();
+    }
 
-        System.out.println("Valor A e B antes da troca: "+A+" e "+B);
-        C = B;
+    public static double lerSegundoValor() {
+        Scanner meuScanner = new Scanner(System.in);
+        System.out.print("Digite o segundo valor: ");
+        return meuScanner.nextDouble();
+    }
+
+    public static void trocarValores(double A, double B) {
+        double reserva;
+        System.out.println("\nValor antes da troca, valor A "+A+" e valor B "+B);
+        reserva = B;
         B = A;
-        A = C;
-        System.out.println("Valor A e B depois da troca: "+A+" e "+B);
+        A = reserva;
+        System.out.println("\nValor depois da troca, valor A "+A+" e valor B "+B);
     }
 }
