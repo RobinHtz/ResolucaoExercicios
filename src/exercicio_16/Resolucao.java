@@ -7,27 +7,34 @@ import java.util.Scanner;
 
 public class Resolucao {
     public static void main(String[] args) {
+        retornarTipoTriangulo(leitorTriangulo());
+    }
+
+    public static double[] leitorTriangulo() {
         Scanner meuScanner = new Scanner(System.in);
-        double A,B,C;
+        double [] ladosTriangulo= new double[3];
 
         System.out.print("Digite um lado do triângulo: ");
-        A = meuScanner.nextDouble();
+        ladosTriangulo[0] = meuScanner.nextDouble();
         System.out.print("Digite outro lado do triângulo: ");
-        B = meuScanner.nextDouble();
+        ladosTriangulo[1] = meuScanner.nextDouble();
         System.out.print("Digite o último lado do triângulo: ");
-        C = meuScanner.nextDouble();
+        ladosTriangulo[2] = meuScanner.nextDouble();
 
-        if(A+B<C || A+C<B || B+C<A) {
-            System.out.println("\nTriângulo inválido, o programa será reiniciado.");
-            System.exit(0);
+        if(ladosTriangulo[0]+ladosTriangulo[1]<ladosTriangulo[2] || ladosTriangulo[0]+ladosTriangulo[2]<ladosTriangulo[1] || ladosTriangulo[1]+ladosTriangulo[2]<ladosTriangulo[0]) {
+            System.out.println("\nTriângulo inválido, o programa será reiniciado.\n");
+            leitorTriangulo();
         }
+        return ladosTriangulo;
+    }
 
-        if(A!=B && A!=C && C!=B) {
-            System.out.println("Triângulo escaleno.");
-        } else if(A==B && B==C) {
-            System.out.println("Triângulo equilátero.");
+    public static void retornarTipoTriangulo(double[] ladosTriangulo) {
+        if(ladosTriangulo[0]!=ladosTriangulo[1] && ladosTriangulo[0]!=ladosTriangulo[2] && ladosTriangulo[2]!=ladosTriangulo[1]) {
+            System.out.println("\nTriângulo escaleno.");
+        } else if(ladosTriangulo[0]==ladosTriangulo[1] && ladosTriangulo[1]==ladosTriangulo[2]) {
+            System.out.println("\nTriângulo equilátero.");
         } else {
-            System.out.println("Triângulo isósceles.");
+            System.out.println("\nTriângulo isósceles.");
         }
     }
 }
