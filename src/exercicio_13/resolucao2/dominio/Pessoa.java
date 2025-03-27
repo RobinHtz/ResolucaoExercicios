@@ -3,8 +3,13 @@ package exercicio_13.resolucao2.dominio;
 public class Pessoa {
     private String nome;
     private int idade;
+    private boolean isMaiorDeIdade;
 
     public Pessoa() {
+    }
+
+    public void maiorDeIdade() {
+        setIsMaiorDeIdade(getIdade() >= 18);
     }
 
     public void setNome(String nome) {
@@ -15,28 +20,16 @@ public class Pessoa {
     }
 
     public void setIdade(int idade) {
-        if(idade>0) {
-            this.idade = idade;
-        } else {
-            System.out.println("Idade inválida.");
-        }
+        this.idade = idade;
     }
     public int getIdade() {
         return idade;
     }
 
-    public void impressao() {
-        if(getIdade()>0) {
-            System.out.println("Nome: "+getNome());
-            maiorDeIdade();
-        }
+    public void setIsMaiorDeIdade(boolean isMaiorDeIdade) {
+        this.isMaiorDeIdade = isMaiorDeIdade;
     }
-
-    public void maiorDeIdade() {
-        if(getIdade()>=18) {
-            System.out.println("Maior de idade.");
-        } else {
-            System.out.println("Menor de idade.");
-        }
+    public boolean getIsMaiorDeIdade() {
+        return isMaiorDeIdade;
     }
 }

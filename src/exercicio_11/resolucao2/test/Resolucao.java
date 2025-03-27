@@ -1,6 +1,5 @@
 package exercicio_11.resolucao2.test;
 
-import java.util.Scanner;
 import exercicio_11.resolucao2.dominio.Aluno;
 
 import static exercicio_11.resolucao2.servicos.ImpressaoAluno.imprimirResultados;
