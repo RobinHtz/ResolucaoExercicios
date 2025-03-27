@@ -7,23 +7,38 @@ se o aluno foi aprovado ou reprovado. Para o aluno ser considerado aprovado sua 
 
 public class Resolucao {
     public static void main(String[] args) {
-        Scanner meuScanner = new Scanner(System.in);
         String nomeAluno;
-        double nota1, nota2, nota3, nota4, mediaNotas;
+        double mediaNotas;
+
+        nomeAluno = lerNomeAluno();
+        mediaNotas = lerNotasAlunoECalculaMedia();
+        imprimeAluno(nomeAluno, mediaNotas);
+    }
+
+    public static String lerNomeAluno() {
+        Scanner meuScanner = new Scanner(System.in);
 
         System.out.print("Digite o nome do aluno: ");
-        nomeAluno = meuScanner.nextLine();
+        return meuScanner.nextLine();
+    }
+
+    public static double lerNotasAlunoECalculaMedia() {
+        Scanner meuScanner = new Scanner(System.in);
+        double [] notas = new double[4];
 
         System.out.print("Digite a primeira nota do aluno: ");
-        nota1 = meuScanner.nextDouble();
+        notas[0] = meuScanner.nextDouble();
         System.out.print("Digite a segunda nota do aluno: ");
-        nota2 = meuScanner.nextDouble();
+        notas[1] = meuScanner.nextDouble();
         System.out.print("Digite a terceira nota do aluno: ");
-        nota3 = meuScanner.nextDouble();
+        notas[2] = meuScanner.nextDouble();
         System.out.print("Digite a quarta nota do aluno: ");
-        nota4 = meuScanner.nextDouble();
+        notas[3] = meuScanner.nextDouble();
 
-        mediaNotas = (nota1+nota2+nota3+nota4)/4;
+        return ((notas[0]+notas[1]+notas[2]+notas[3])/4);
+    }
+
+    public static void imprimeAluno(String nomeAluno, double mediaNotas) {
 
         System.out.println("\n------------------------------------------");
         System.out.println("Nome do aluno: "+nomeAluno);

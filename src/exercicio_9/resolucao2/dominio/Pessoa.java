@@ -1,7 +1,9 @@
 package exercicio_9.resolucao2.dominio;
 
 public class Pessoa {
-    private double altura,peso,IMC;
+    private double altura;
+    private double peso;
+    private double IMC;
 
     public Pessoa(){}
 

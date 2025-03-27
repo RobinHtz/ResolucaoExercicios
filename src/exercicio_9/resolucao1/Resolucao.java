@@ -18,11 +18,11 @@ Tabela Condições IMC
 
 public class Resolucao {
     public static void main(String[] args) {
-        double valorIMC = leValoresECalcula();
+        double valorIMC = leValoresECalculaIMC();
         verificaTabelaIMC(valorIMC);
     }
 
-    public static double leValoresECalcula() {
+    public static double leValoresECalculaIMC() {
         Scanner meuScanner = new Scanner(System.in);
 
         System.out.print("Digite sua altura: ");
