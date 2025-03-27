@@ -18,16 +18,22 @@ Tabela Condições IMC
 
 public class Resolucao {
     public static void main(String[] args) {
+        double valorIMC = leValoresECalcula();
+        verificaTabelaIMC(valorIMC);
+    }
+
+    public static double leValoresECalcula() {
         Scanner meuScanner = new Scanner(System.in);
-        double altura, peso, valorIMC;
 
         System.out.print("Digite sua altura: ");
-        altura = meuScanner.nextDouble();
+        double altura = meuScanner.nextDouble();
         System.out.print("Digite seu peso: ");
-        peso = meuScanner.nextDouble();
+        double peso = meuScanner.nextDouble();
 
-        valorIMC = peso / (altura*altura);
+        return (peso/(altura*altura));
+    }
 
+    public static void verificaTabelaIMC(double valorIMC) {
         if(valorIMC < 18.5) {
             System.out.println("\nAbaixo do peso.");
         } else if(valorIMC >= 18.5 && valorIMC <25) {
