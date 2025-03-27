@@ -14,11 +14,31 @@ import java.util.Scanner;
 public class Resolucao {
     public static void main(String[] args) {
         Scanner meuScanner = new Scanner(System.in);
+
         double valorProduto;
-        int num;
+        int numeroFormaDePagamento;
+
+        valorProduto = lerValorProduto(meuScanner);
+        numeroFormaDePagamento = lerFormaPagamento(meuScanner);
+
+        formaDePagamento(numeroFormaDePagamento, valorProduto, meuScanner);
+        meuScanner.close();
+    }
+
+    public static double lerValorProduto(Scanner meuScanner) {
+        double valor;
 
         System.out.print("Digite o valor do produto: ");
-        valorProduto = meuScanner.nextDouble();
+        valor = meuScanner.nextDouble();
+        if(valor < 0) {
+            System.out.println("Valor inválido, tente novamente.");
+            return lerValorProduto(meuScanner);
+        }
+        return valor;
+    }
+
+    public static int lerFormaPagamento(Scanner meuScanner) {
+
 
         System.out.println("\nFormas de pagamento:");
         System.out.println("1 - À vista em dinheiro ou pix, recebe 15% de desconto ");
@@ -27,9 +47,11 @@ public class Resolucao {
         System.out.println("4 - Parcelado no cartão em três vezes ou mais, preço normal do produto mais juros de 10% ");
 
         System.out.print("\nEscolha o número referente a forma de pagamento: ");
-        num = meuScanner.nextInt();
-        System.out.println();
+        return meuScanner.nextInt();
+    }
 
+    public static void formaDePagamento(int num, double valorProduto, Scanner meuScanner) {
+        System.out.println();
         switch(num) {
             case 1:
                 valorProduto = valorProduto-(valorProduto*0.15);
@@ -51,8 +73,8 @@ public class Resolucao {
                 System.out.println("Valor do produto com 10% de juros: R$ "+valorProduto);
                 break;
             default:
-                System.out.println("Número inválido.");
-                System.out.println("Tente novamente.");
+                System.out.println("Número inválido, por favor tente novamente.");
+                formaDePagamento(lerFormaPagamento(meuScanner),valorProduto,meuScanner);
         }
     }
 }
