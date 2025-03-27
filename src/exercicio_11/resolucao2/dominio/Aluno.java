@@ -4,6 +4,7 @@ public class Aluno {
     private String nome;
     private double[] notas;
     private double media;
+    private boolean isAprovado;
 
     public Aluno(){
     }
@@ -18,11 +19,7 @@ public class Aluno {
     }
 
     public void aprovadoOuReprovado() {
-        if(getMedia()>=7) {
-            System.out.println("Aluno aprovado!");
-        } else {
-            System.out.println("Aluno reprovado.");
-        }
+        setIsAprovado(getMedia() >= 7);
     }
 
 
@@ -45,5 +42,12 @@ public class Aluno {
     }
     public void setMedia(double media) {
         this.media = media;
+    }
+
+    public boolean getIsAprovado() {
+        return isAprovado;
+    }
+    public void setIsAprovado(boolean isAprovadoOuReprovado) {
+        this.isAprovado = isAprovadoOuReprovado;
     }
 }
